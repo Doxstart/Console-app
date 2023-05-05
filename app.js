@@ -1,7 +1,10 @@
+const { log } = require('console');
 const fs = require('fs');
 const { json } = require('stream/consumers');
 
 let data;
+
+console.log(process.argv);
 
 try {
     data = fs.readFileSync('./data/test.csv', 'utf8');
